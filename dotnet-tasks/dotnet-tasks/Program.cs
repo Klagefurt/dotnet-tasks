@@ -64,9 +64,9 @@ class Program
             workbook.Close(true);
             app.Quit();
         }
-        catch (Exception ex) 
-        { 
-            Console.WriteLine(ex.Message); 
+        catch (Exception ex)
+        {
+            Console.WriteLine(ex.Message);
         }
     }
 
@@ -109,7 +109,7 @@ class Program
     {
         var path = "output.json";
         foreach (var obj in array)
-        {    
+        {
             using (var streamwriter = File.AppendText(path))
             {
                 var strObj = JsonConvert.SerializeObject(obj);
@@ -176,7 +176,7 @@ class Program
             return factories[factoryID - 1];
         else
             return null;
-        }
+    }
 
     // реализуйте этот метод, чтобы он возвращал суммарный объем резервуаров в массиве
     public static int GetTotalVolume(Tank[] units)
