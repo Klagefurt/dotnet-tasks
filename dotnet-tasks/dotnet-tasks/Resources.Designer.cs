@@ -71,6 +71,47 @@ namespace dotnet_tasks {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Id;Name;Description
+        ///1;НПЗ№1;Первый нефтеперерабатывающий завод
+        ///2;НПЗ№2;Второй нефтеперерабатывающий завод
+        ///.
+        /// </summary>
+        internal static string input_factories {
+            get {
+                return ResourceManager.GetString("input_factories", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Id;Name;Description;FactoryId
+        ///1;ГФУ-2;Газофракционирующая установка;1
+        ///2;АВТ-6;Атмосферно-вакуумная трубчатка;1
+        ///3;АВТ-10;Атмосферно-вакуумная трубчатка;2
+        ///.
+        /// </summary>
+        internal static string input_tanks {
+            get {
+                return ResourceManager.GetString("input_tanks", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Id;Name;Description;Volume;MaxVolume;UnitId
+        ///1;Резервуар 1;Надземный - вертикальный;1500;2000;1
+        ///2;Резервуар 2;Надземный - горизонтальный;2500;3000;1
+        ///3;Дополнительный резервуар 24;Надземный - горизонтальный;3000;3000;2
+        ///4;Резервуар 35;Надземный - вертикальный;3000;3000;2
+        ///5;Резервуар 47;Подземный - двустенный;4000;5000;2
+        ///6;Резервуар 256;Подводный;500;500;3
+        ///.
+        /// </summary>
+        internal static string input_units {
+            get {
+                return ResourceManager.GetString("input_units", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to .
         /// </summary>
         internal static string String1 {
